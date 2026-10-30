@@ -1,0 +1,6 @@
+{
+  "name": "MITRA BROWSER",
+  "description": "Browse Beyond Limits. A modern, premium, secure cross-platform web browser with real web browsing, ad & tracker blocking, Gemini AI assistant, and security vault.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

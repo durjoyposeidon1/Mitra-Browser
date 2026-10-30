@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-mitra-navy: #080D24;
+    --color-mitra-dark: #0B1025;
+    --color-mitra-cyan: #00D9FF;
+    --color-mitra-blue: #2864FF;
+    --color-mitra-purple: #8B35FF;
+    --color-mitra-magenta: #C735E8;
+  }
+
+  body {
+    background-color: #080D24;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    user-select: none;
+    overflow: hidden;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(11, 16, 37, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(40, 100, 255, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 217, 255, 0.7);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(11, 16, 37, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-dropdown {
+  background: #0B1025;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(0, 217, 255, 0.2);
+}
+
+.tab-active {
+  background: #0F1738;
+  border-top: 2px solid #00D9FF;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #00D9FF 0%, #2864FF 40%, #8B35FF 70%, #C735E8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+  border-image: linear-gradient(135deg, #00D9FF, #8B35FF) 1;
+}
+
+.pulse-glow {
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.35);
+}
